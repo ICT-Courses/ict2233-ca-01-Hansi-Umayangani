@@ -19,3 +19,15 @@
 .active {
   text-decoration: underline;
 }
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border: 50%;
+}
