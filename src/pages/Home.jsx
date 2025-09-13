@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
+    {/* Hero Section */}
       <section className={styles.heroSection}>
         <div className={styles.container}>
           <div className={styles.logoContainer}>
@@ -41,6 +41,18 @@ function Home() {
           <div className={styles.heroButtons}>
             <a href="/pets" className={`${styles.btn} ${styles.btnPrimary}`}>View Available Pets</a>
             <a href="/about" className={`${styles.btn} ${styles.btnOutline}`}>For More Details</a>
+          </div>
+        </div>
+      </section>
+    
+    {/* Featured Pets Section */}
+      <section className={styles.featuredPetsSection}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Featured Pets</h2>
+          {loading && <LoadingSpinner />}
+          {error && <p className={styles.error}>{error}</p>}
+          <div className={styles.petsGrid}>
+            {pets.map(pet => <Card key={pet.id} pet={pet} />)}
           </div>
         </div>
       </section>
