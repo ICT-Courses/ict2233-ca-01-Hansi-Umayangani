@@ -33,7 +33,13 @@ function PetDetail() {
   if (error) return <p className={styles.error}>{error}</p>;
 
   return (
-    <div className={styles.container}></div>
+    <div className={styles.container}>
+        <h1 className={styles.name}>{pet.name}</h1>
+        <img src={pet.image} alt={pet.name} className={styles.image} />
+        <p><strong>Breed:</strong> {pet.breed}</p>
+        <p><strong>Age:</strong> {pet.age}</p>
+        <p><strong>Description:</strong> {pet.description}</p>
+    </div>
   );
 }
 
