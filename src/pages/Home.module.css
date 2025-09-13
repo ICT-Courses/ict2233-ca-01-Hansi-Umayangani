@@ -33,3 +33,147 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* -------------------- Hero Section -------------------- */
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background: url("../assets/Hero_Section_Image_New.png") no-repeat bottom center;
+  background-size: cover;
+  background-color: #f7cd9e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6rem 6%;
+  text-align: left;
+  overflow: hidden;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.2;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  max-width: 80%;
+}
+
+.heroDescription {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  color: #2b2a2a;
+  text-align: left;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-align: center;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btnPrimary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btnPrimary:hover {
+  background-color: #d4701f;
+}
+
+.btnOutline {
+  background-color: transparent;
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+.btnOutline:hover {
+  background-color: var(--muted);
+}
+
+/* -------------------- Mission Section -------------------- */
+.missionSection {
+  padding: 4rem 1rem;
+  background-color: rgba(235, 204, 173, 0.3);
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 4.2vw, 3.5rem);
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.missionText {
+  font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.missionSteps {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.stepIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rescueIcon { background-color: rgba(237,197,91,0.2);}
+.rehabilitateIcon { background-color: rgba(236,128,43,0.2);}
+.rehomeIcon { background-color: rgba(102,188,180,0.2);}
+
+.step h3 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+
+.missionImage img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
