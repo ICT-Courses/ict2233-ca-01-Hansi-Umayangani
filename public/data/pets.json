@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bella",
+    "breed": "Golden Retriever",
+    "age": "2 years",
+    "description": "Friendly and playful, loves children.",
+    "image": "/assets/bella.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "Beagle",
+    "age": "3 years",
+    "description": "Curious and energetic, enjoys walks.",
+    "image": "/assets/max.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Luna",
+    "breed": "Siamese Cat",
+    "age": "1 year",
+    "description": "Affectionate and calm, loves to cuddle.",
+    "image": "/assets/luna.jpg"
+  }
+]
