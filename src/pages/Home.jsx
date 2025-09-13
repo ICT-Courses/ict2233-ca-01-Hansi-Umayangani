@@ -47,36 +47,45 @@ function Home() {
 
         {/* Mission Section */}
         <section className={styles.missionSection}>
-            <div className={styles.container}>
+          <div className={styles.container}>
             <div className={styles.missionGrid}>
                 <div>
                 <h2 className={styles.sectionTitle}>Our Mission</h2>
                 <p className={styles.missionText}>
-                    We believe every pet deserves love, care, and a family to call their own.
+                    Our mission is to create a world where every pet feels safe, valued, and loved.<br/>
+                    Through dedicated rescue efforts, compassionate rehabilitation, and thoughtful rehoming, <br/>
+                    we give abandoned animals a second chance at life and <br/>
+                    connect them with families who will cherish them forever.
                 </p>
                 <div className={styles.missionSteps}>
-                    <div className={styles.step}>
-                    <div className={`${styles.stepIcon} ${styles.rescueIcon}`}></div>
+
+                  <div className={styles.step}>
+                    <div className={styles.stepIcon}>
+                      <img src="/src/assets/Rescue_Image.jpg" alt="Rescue" />
+                    </div>
                     <h3>Rescue</h3>
-                    <p>We rescue abandoned pets with medical care.</p>
+                    <p>We save abandoned pets and provide them with urgent care and safety.</p>
+                  </div>
+
+                  <div className={styles.step}>
+                    <div className={styles.stepIcon}>
+                      <img src="/src/assets/Rehabilitate_Image.jpg" alt="Rehabilitate" />
                     </div>
-                    <div className={styles.step}>
-                    <div className={`${styles.stepIcon} ${styles.rehabilitateIcon}`}></div>
                     <h3>Rehabilitate</h3>
-                    <p>We provide loving care and training.</p>
+                    <p>We give rescued pets love, training, and healing for a fresh start.</p>
+                  </div>
+
+                  <div className={styles.step}>
+                    <div className={styles.stepIcon}>
+                      <img src="src/assets/Rehome_Image.jpg" alt="Rehome" />
                     </div>
-                    <div className={styles.step}>
-                    <div className={`${styles.stepIcon} ${styles.rehomeIcon}`}></div>
                     <h3>Rehome</h3>
-                    <p>We match pets with loving families.</p>
-                    </div>
+                    <p>We connect pets with caring families and lasting forever homes.</p>
+                  </div>
                 </div>
-                </div>
-                <div className={styles.missionImage}>
-                <img src="" alt="Happy Pets"/>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </section>
     
         {/* Featured Pets Section */}
