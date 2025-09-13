@@ -31,3 +31,15 @@
   height: 60px;
   border: 50%;
 }
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
