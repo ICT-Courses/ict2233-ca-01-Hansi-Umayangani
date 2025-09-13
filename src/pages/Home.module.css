@@ -204,3 +204,58 @@ body {
   font-size: clamp(0.85rem, 2vw, 1rem);
   color: var(--muted-foreground);
 }
+
+/* -------------------- Responsive Breakpoints -------------------- */
+
+/* Large Desktop (>=1200px) */
+@media (min-width: 1200px) {
+  .heroTitle { font-size: 4rem; }
+  .heroDescription { font-size: 1.5rem; }
+  .petsGrid { grid-template-columns: repeat(3, 1fr); }
+  .missionSteps { gap: 2rem; }
+  .container { width: 100vw; max-width: 2000px; }
+  .heroSection { min-height: 110vh; padding: 4rem 5%; }
+  .heroTitle{ max-width: 60%;}
+  .heroButtons .btn { max-width: 180px; min-width: 120px; }
+}
+
+/* Desktop / Laptop (992px – 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .heroTitle { font-size: 3.75rem; }
+  .heroDescription { font-size: 1.4rem; }
+  .petsGrid { grid-template-columns: repeat(3, 1fr); }
+  .heroSection { min-height: 100vh; }
+  .heroTitle {margin-top: 20px; max-width: 50%;}
+}
+
+/* Tablet (768px – 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .heroTitle { font-size: 3.5rem; }
+  .heroDescription { font-size: 1.25rem; }
+  .petsGrid { grid-template-columns: repeat(2, 1fr); }
+  .missionSteps { grid-template-columns: repeat(3, 1fr); }
+  .heroSection { min-height: 70vh; padding: 4rem 5%; }
+  .heroButtons { flex-direction: row; gap: 1rem; }
+}
+
+/* Mobile (576px – 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .heroTitle { font-size: 2.5rem; }
+  .heroDescription { font-size: 1.1rem; }
+  .heroButtons { flex-direction: column; gap: 0.75rem; }
+  .petsGrid { grid-template-columns: 1fr; }
+  .missionSteps { grid-template-columns: 1fr; }
+  .heroSection { padding: 3rem 1.5rem; }
+  .heroButtons .btn { width: auto; max-width: 180px; min-width: 120px;  }
+}
+
+/* Extra Small Mobile (<=575px) */
+@media (max-width: 575px) {
+  .heroTitle { font-size: 2rem; }
+  .heroDescription { font-size: 1rem; }
+  .heroButtons { flex-direction: column; gap: 0.5rem; }
+  .missionImage img { height: 300px; }
+  .container { width: 90%; padding: 0 1rem; }
+  .petsGrid, .missionSteps { grid-template-columns: 1fr; }
+  .heroButtons .btn {width: auto; max-width: 160px; min-width: 100px; }
+}
