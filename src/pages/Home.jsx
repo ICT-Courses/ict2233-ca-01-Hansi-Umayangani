@@ -17,7 +17,7 @@ function Home() {
         const res = await fetch("/data/pets.json");
         if (!res.ok) throw new Error("Failed to load pets data");
         const data = await res.json();
-        setPets(data.slice(0, 3));
+        setPets(data.slice(0, 4));
       } catch (err) {
         setError(err.message);
       } finally {
