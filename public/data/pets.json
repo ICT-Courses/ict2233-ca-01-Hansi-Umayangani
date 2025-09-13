@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Bella",
-    "breed": "Golden Retriever",
+    "breed": "Golden Retriever crossed",
     "age": "2 years",
     "description": "Friendly and playful, loves children.",
     "image": "/assets/bella.jpg"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Max",
-    "breed": "Beagle",
+    "breed": "Beagle crossed",
     "age": "3 years",
     "description": "Curious and energetic, enjoys walks.",
     "image": "/assets/max.jpg"
@@ -18,9 +18,17 @@
   {
     "id": 3,
     "name": "Luna",
-    "breed": "Siamese Cat",
+    "breed": "Siamese Cat crossed",
     "age": "1 year",
     "description": "Affectionate and calm, loves to cuddle.",
     "image": "/assets/luna.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Charlie",
+    "breed": "Labrador Retriever Crossed",
+    "age": "4 years",
+    "description": "Loyal and friendly, great with families.",
+    "image": "/assets/charlie.jpg"
   }
 ]
