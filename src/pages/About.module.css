@@ -124,3 +124,78 @@ img {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   color: #d46612;
 }
+
+/* -------------------- Buttons -------------------- */
+.readySection .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.adoptBtn,
+.involveBtn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.adoptBtn {
+  background-color: #d46612;
+  color: #fff;
+}
+
+.involveBtn {
+  background-color: #66BCB4;
+  color: #fff;
+}
+
+.adoptBtn:hover,
+.involveBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* -------------------- Responsive Breakpoints -------------------- */
+
+/* Large Desktop (>=1200px) */
+@media (min-width: 1200px) {
+  .card, .storyCard {
+    width: 280px;
+  }
+}
+
+/* Desktop / Laptop (992px – 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .card, .storyCard {
+    width: 260px;
+  }
+}
+
+/* Tablet (768px – 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .card, .storyCard {
+    width: 45%;
+  }
+}
+
+/* Mobile (<=767px) */
+@media (max-width: 767px) {
+  .missionCards,
+  .visionCards,
+  .storyCards,
+  .impactCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .storyCard {
+    width: 90%;
+  }
+}
