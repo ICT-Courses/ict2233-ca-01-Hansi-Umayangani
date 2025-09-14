@@ -43,3 +43,38 @@ img {
   border-radius: 12px;
 }
 
+/* -------------------- Sections -------------------- */
+.aboutSection,
+.missionSection,
+.visionSection,
+.successSection,
+.impactSection,
+.readySection {
+  padding: 60px clamp(5%, 8vw, 10%);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutSection h1,
+.missionSection h2,
+.visionSection h2,
+.successSection h2,
+.impactSection h2,
+.readySection h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 20px;
+  color: #4b2e1e;
+}
+
+.aboutSection p,
+.missionSection p,
+.visionSection p,
+.successSection p,
+.readySection p {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  color: #333;
+  line-height: 1.6;
+  margin-inline: auto;
+  max-width: 800px;
+}
