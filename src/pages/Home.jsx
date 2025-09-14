@@ -115,6 +115,26 @@ function Home() {
           </div>
         </section>
 
+        {/* Stats Section */}
+        <section className={styles.statsSection}>
+          <div className={styles.container}>
+            <div className={styles.statsGrid}>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>500+</div>
+                <div className={styles.statLabel}>Pets Rescued</div>
+              </div>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>450+</div>
+                <div className={styles.statLabel}>Happy Families</div>
+              </div>
+              <div className={styles.stat}>
+                <div className={styles.statNumber}>25</div>
+                <div className={styles.statLabel}>Pets Available Now</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </div>
   );
 }
