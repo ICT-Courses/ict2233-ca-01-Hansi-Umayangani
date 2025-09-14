@@ -31,6 +31,35 @@ export function Footer() {
         </ul>
         </div>
 
+        {/* Contact Info */}
+        <div className={styles.contactInfo}>
+        <h4>Contact Info</h4>
+        <p>
+            <img
+            src="src/assets/Icons/phone.png" alt="Phone" className={styles.contactIcon}
+            />
+            <a href="tel:+555123PETS">(555) 123-PETS</a>
+        </p>
+        <p>
+            <img
+            src="/icons/mail.png" alt="Email" className={styles.contactIcon}
+            />
+            <a href="mailto:info@pawfecthome.com">info@pawfecthome.com</a>
+        </p>
+        <p>
+            <img
+            src="/icons/location.png" alt="Location" className={styles.contactIcon}
+            />
+            <a
+            href="https://maps.google.com/?q=123+Pet+Street,+Animal+City"
+            target="_blank" rel="noopener noreferrer"
+            >
+            123 Pet Street,<br />
+            Animal City, AC 12345
+            </a>
+        </p>
+        </div>
+
       </div>
       <div className={styles.footerBottom}>
         © 2025 Pawfect Home. All Rights Reserved.<br />
