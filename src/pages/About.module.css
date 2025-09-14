@@ -78,3 +78,49 @@ img {
   margin-inline: auto;
   max-width: 800px;
 }
+
+/* -------------------- Cards -------------------- */
+.missionCards,
+.visionCards,
+.storyCards,
+.impactCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card,
+.storyCard {
+  background-color: #fff9e8;
+  padding: 20px;
+  border-radius: 12px;
+  width: clamp(250px, 28%, 280px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.storyCard h3 {
+  margin: 10px 0 5px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #d46612;
+}
+
+.storyCard span {
+  display: block;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-style: italic;
+  color: #4b2e1e;
+  margin-top: 10px;
+}
+
+.impactCards .card h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: #d46612;
+}
