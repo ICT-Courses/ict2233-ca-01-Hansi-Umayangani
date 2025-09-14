@@ -12,7 +12,7 @@ const About = () => {
                 <div className={styles.sectionContainer}>
                     <h1>About Pawfect Home</h1>
                     <p>
-                        We are dedicated to rescuing abandoned pets and connecting them with loving families. 
+                        We are dedicated to rescuing abandoned pets and connecting them with loving families.<br/> 
                         Our mission is to create a world where every pet finds a loving home.
                     </p>
                 </div>
@@ -22,23 +22,25 @@ const About = () => {
             <section className={styles.missionSection}>
                 <div className={styles.sectionContainer}>
                     <h2>Our Mission</h2>
-                    <p>At Pawfect Home, we rescue and rehabilitate abandoned, neglected, and surrendered pets. 
+                    <p>At Pawfect Home, we rescue and rehabilitate abandoned, neglected, and surrendered pets. <br/>
                         We provide them with medical care, love, and training to prepare them for their forever homes.
                     </p>
-                    <p>Every animal deserves a second chance at happiness...</p>
+                    <p>Every animal in the world deserves a second chance at happiness.</p>
 
                     <div className={styles.missionCards}>
                         <div className={styles.card}>
                             <h3>Rescue & Rehabilitation</h3>
-                            <img src={maxImg} alt="Rescue & Rehab" className={styles.cardImage} />
+                            <img src="src/assets/Rescueing.jpg" alt="Rescue & Rehab" className={styles.cardImage} />
                             <p>We provide immediate medical care and emotional support to pets in need.</p>
                         </div>
                         <div className={styles.card}>
                             <h3>Careful Matching</h3>
+                            <img src="src/assets/Right-Family.jpg" alt="Rescue & Rehab" className={styles.cardImage} />
                             <p>We ensure each pet finds the right family through our thorough adoption process.</p>
                         </div>
                         <div className={styles.card}>
                             <h3>Ongoing Support</h3>
+                            <img src="src/assets/Guiding.jpg" alt="Rescue & Rehab" className={styles.cardImage} />
                         <p>We provide continued guidance and support to ensure successful adoptions.</p>
                     </div>
                 </div>
@@ -49,20 +51,23 @@ const About = () => {
             <section className={styles.visionSection}>
                 <div className={styles.sectionContainer}>
                     <h2>Our Vision</h2>
-                    <p>A world where every pet finds a loving home...</p>
+                    <p>"A world where every pet finds a loving home."</p>
 
                     <div className={styles.visionCards}>
                         <div className={styles.card}>
+                            <img src="src/assets/icons/star.png" alt="Excellence in Care" className={styles.visionIcon} />
                         <h3>Excellence in Care</h3>
-                        <p>We strive to provide the highest quality medical care...</p>
+                        <p>We strive to provide the highest quality medical care.</p>
                         </div>
                         <div className={styles.card}>
+                            <img src="src/assets/icons/love.png" alt="Community Impact" className={styles.visionIcon} />
                         <h3>Community Impact</h3>
-                        <p>We work with local communities to educate...</p>
+                        <p>We work with local communities to educate.</p>
                         </div>
                         <div className={styles.card}>
+                            <img src="src/assets/icons/dog.png" alt="Global Inspiration" className={styles.visionIcon} />
                         <h3>Global Inspiration</h3>
-                        <p>We aim to inspire other organizations worldwide...</p>
+                        <p>We aim to inspire other organizations worldwide.</p>
                         </div>
                     </div>
                 </div>
@@ -72,19 +77,19 @@ const About = () => {
             <section className={styles.successSection}>
                 <div className={styles.sectionContainer}>
                     <h2>Success Stories</h2>
-                    <p>Read about some of our wonderful adoption success stories</p>
+                    <p>Read about some of our wonderful adoption success stories.</p>
 
                     <div className={styles.storyCards}>
                         <div className={styles.storyCard}>
-                        <img src={maxImg} alt="Max" className={styles.storyImage} />
-                        <h3>Max & The Johnson Family</h3>
+                        <img src="src/assets/Jude's_Review.jpg" alt="Max" className={styles.storyImage} />
+                        <h3>Max & The Jude</h3>
                         <span>Adopted 6 months ago</span>
                         <p>"Max has brought so much joy to our family..."</p>
                         <p className={styles.author}>- Sarah Johnson</p>
                         </div>
 
                         <div className={styles.storyCard}>
-                        <img src={lunaImg} alt="Luna" className={styles.storyImage} />
+                        <img src="src/assets/Michael's_Reviwe.jpg" alt="Luna" className={styles.storyImage} />
                         <h3>Luna & Michael</h3>
                         <span>Adopted 1 year ago</span>
                         <p>"Luna was exactly what I needed in my life..."</p>
@@ -98,15 +103,15 @@ const About = () => {
             <section className={styles.impactSection}>
                 <div className={styles.sectionContainer}>
                     <h2>Our Impact</h2>
-                    <p>Making a difference, one pet at a time</p>
+                    <p>Making a difference, One pet at a time</p>
 
                     <div className={styles.impactCards}>
                         <div className={styles.card}>
-                        <h3>500+</h3>
+                        <h3>500 +</h3>
                         <p>Pets Rescued</p>
                         </div>
                         <div className={styles.card}>
-                        <h3>450+</h3>
+                        <h3>450 +</h3>
                         <p>Successful Adoptions</p>
                         </div>
                         <div className={styles.card}>

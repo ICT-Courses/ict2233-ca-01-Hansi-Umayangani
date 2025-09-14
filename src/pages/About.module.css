@@ -92,6 +92,7 @@ img {
   line-height: 1.6;
   margin-inline: auto;
   max-width: 100%;
+  margin-top: 20px;
 }
 
 .missionCards {
@@ -101,7 +102,26 @@ img {
   gap: 2rem;
   margin-top: 40px;
   width: 100%;
+  height: 420px;
+  text-align: center;
 }
+
+.cardImage {
+  width: 200px;
+  height: 200px;  
+  object-fit: cover;
+  margin: 10px 0;  
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 
 .missionCards .card {
   background-color: #fff;
@@ -109,7 +129,7 @@ img {
   border-radius: 12px;
   width: clamp(250px, 28%, 280px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 
 /* -------------------- Vision Section -------------------- */
@@ -135,6 +155,18 @@ img {
   max-width: 100%;
 }
 
+.visionIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+
 .visionCards {
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +174,8 @@ img {
   gap: 2rem;
   margin-top: 40px;
   width: 100%;
+  height: 12rem;
+  text-align: center;
 }
 
 .visionCards .card {
@@ -150,7 +184,7 @@ img {
   border-radius: 12px;
   width: clamp(250px, 28%, 280px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 
 /* -------------------- Success Stories Section -------------------- */
@@ -183,6 +217,7 @@ img {
   gap: 2rem;
   margin-top: 40px;
   width: 100%;
+  align-items: stretch;
 }
 
 .storyCard {
@@ -192,7 +227,21 @@ img {
   width: clamp(250px, 28%, 280px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
 }
+
+.storyImage {
+  width: 100%;
+  height: 100%;  
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block;
+}
+
 
 .storyCard h3 {
   margin: 10px 0 5px;
@@ -227,12 +276,22 @@ img {
   color: #4b2e1e;
 }
 
+.impactSection h3 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(122, 69, 8, 0.527);;
+  color: #774919;
+  font-family: 'Playfair Display', serif;
+}
+
 .impactSection p {
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   color: #333;
   line-height: 1.6;
   margin-inline: auto;
   max-width: 100%;
+  margin-top: 8px;
 }
 
 .impactCards {
@@ -251,11 +310,6 @@ img {
   width: clamp(250px, 28%, 280px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-.impactCards .card h3 {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  color: #d46612;
 }
 
 /* -------------------- Ready Section -------------------- */
@@ -281,33 +335,6 @@ img {
   max-width: 100%;
 }
 
-.readySection .buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.adoptBtn,
-.involveBtn {
-  padding: 10px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.adoptBtn {
-  background-color: #d46612;
-  color: #fff;
-}
-
-.involveBtn {
-  background-color: #4b2e1e;
-  color: #fff;
-}
-
-
 /* -------------------- Buttons -------------------- */
 .readySection .buttons {
   margin-top: 30px;
@@ -329,12 +356,12 @@ img {
 }
 
 .adoptBtn {
-  background-color: #d46612;
+  background-color: #d48612;
   color: #fff;
 }
 
 .involveBtn {
-  background-color: #66BCB4;
+  background-color: #8ca033;
   color: #fff;
 }
 
