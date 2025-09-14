@@ -19,7 +19,18 @@ export function Footer() {
             Every pet deserves a chance at happiness and a forever home filled with love.
         </p>
         </div>
-        
+
+        {/* Quick Links */}
+        <div className={styles.footerLinks}>
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pets">Available Pets</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        </div>
+
       </div>
       <div className={styles.footerBottom}>
         © 2025 Pawfect Home. All Rights Reserved.<br />
