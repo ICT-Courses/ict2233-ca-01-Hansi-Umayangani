@@ -90,14 +90,29 @@ function Home() {
     
         {/* Featured Pets Section */}
         <section className={styles.featuredPetsSection}>
-            <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>Featured Pets</h2>
+          <div className={styles.container}>
+            <div className={styles.sectionHeader}>
+              <h2 className={styles.sectionTitle}>Featured Pets</h2>
+              <p className={styles.sectionDescription}>
+                Meet some of our wonderful pets looking for their forever homes
+              </p>
+            </div>
+
             {loading && <LoadingSpinner />}
             {error && <p className={styles.error}>{error}</p>}
+
             <div className={styles.petsGrid}>
-                {pets.map(pet => <Card key={pet.id} pet={pet} />)}
+              {pets.map((pet) => (
+                <Card key={pet.id} pet={pet} />
+              ))}
             </div>
+
+            <div className={styles.viewAllContainer}>
+              <a href="/pets" className={`${styles.btn} ${styles.btnOutlineAccent}`}>
+                View All Available Pets
+              </a>
             </div>
+          </div>
         </section>
 
     </div>
