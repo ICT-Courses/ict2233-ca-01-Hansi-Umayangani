@@ -1,19 +1,32 @@
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 20px 8%;
   background-color: var(--primary);
   color: white;
-  max-width: 100%;
   position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .links a {
   margin-left: 1.5rem;
   text-decoration: none;
   font-weight: 500;
-  color: white;
+  color: #FFF9F4;
+  font-size: clamp(0.85rem, 1.8vw, 1.2rem);
+}
+
+.links a .active {
+  color: var(--border);
+  font-weight: bold;
+  border-bottom: 2px solid var(--border);
+}
+
+.links a:hover {
+  color: var(--border);
 }
 
 .active {
@@ -27,9 +40,17 @@
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border: 50%;
+}
+
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {
