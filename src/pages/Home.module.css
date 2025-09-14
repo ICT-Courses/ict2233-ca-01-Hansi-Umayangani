@@ -30,8 +30,6 @@
 
 html, body {
   height: 100%;
-  width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -54,8 +52,6 @@ main {
 /* -------------------- Hero Section -------------------- */
 .heroSection {
   position: relative;
-  width: 100%;
-  min-height: 80vh;
   background: url("../assets/Hero_Section_Image_New.png") no-repeat center center;
   background-size: cover;
   background-color: #f7cd9e;
@@ -88,7 +84,6 @@ main {
   margin-bottom: 1.5rem;
   color: #fff;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
-  max-width: 90%;
 }
 
 .heroDescription {
@@ -225,8 +220,7 @@ main {
   flex-wrap: wrap;
   justify-content: center; 
   gap: 2rem;
-  margin: 0 auto;
-  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .featuredPetsSection {
@@ -292,7 +286,6 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   text-align: center;
-  max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -323,8 +316,6 @@ main {
     flex-wrap: nowrap;
     margin: 0 auto; 
     margin-bottom: 32px;
-    max-width: 1200px;         
-    width: 100%;
     padding: 0 2rem;
   }
   .missionSteps { gap: 2rem; }
@@ -349,6 +340,20 @@ main {
   .heroTitle {margin-top: 20px; max-width: 50%;}
   .statsGrid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet (768px – 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .heroTitle { font-size: 3.5rem; }
+  .heroDescription { font-size: 1.25rem; }
+  .petsGrid { grid-template-columns: repeat(2, 1fr); }
+  .missionSteps { grid-template-columns: repeat(3, 1fr); }
+  .heroSection { min-height: 85vh; padding: 4rem 5%; }
+  .heroButtons { flex-direction: row; gap: 1rem; }
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr); /* 2 stats per row */
+    gap: 1.5rem;
   }
 }
 
