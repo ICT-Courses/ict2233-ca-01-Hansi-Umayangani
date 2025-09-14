@@ -61,3 +61,24 @@
   display: inline-block;
   transform: translateY(-10px);
 }
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks ul li {
+  margin-bottom: 0.6rem;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+}
+
+.footerLinks ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footerLinks ul li a:hover {
+  color: #d6bfa7;
+}
