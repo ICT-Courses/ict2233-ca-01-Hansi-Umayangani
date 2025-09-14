@@ -5,7 +5,7 @@
     "breed": "Golden Retriever crossed",
     "age": "2 years",
     "description": "Friendly and playful, loves children.",
-    "image": "/assets/bella.jpg"
+    "image": "/assets/Bella.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "breed": "Beagle crossed",
     "age": "3 years",
     "description": "Curious and energetic, enjoys walks.",
-    "image": "/assets/max.jpg"
+    "image": "/assets/Max_Portrait.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "breed": "Siamese Cat crossed",
     "age": "1 year",
     "description": "Affectionate and calm, loves to cuddle.",
-    "image": "/assets/luna.jpg"
+    "image": "/assets/Luna_Portrait.jpg"
   },
   {
     "id": 4,
@@ -29,6 +29,6 @@
     "breed": "Labrador Retriever Crossed",
     "age": "4 years",
     "description": "Loyal and friendly, great with families.",
-    "image": "/assets/charlie.jpg"
+    "image": "/assets/Charlie_Portrait.jpg"
   }
 ]

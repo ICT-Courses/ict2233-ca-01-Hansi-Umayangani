@@ -3,7 +3,7 @@
   --foreground: #3d2e1e;
   --primary: #8b420b;
   --primary-foreground: #fff;
-  --secondary: #66BCB4;
+  --secondary: #855207a9;
   --secondary-foreground: #fff;
   --accent: #edae5b;
   --accent-foreground: #1a1a1a;
@@ -220,8 +220,17 @@ main {
 
 
 /* -------------------- Featured Pets -------------------- */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
 .featuredPetsSection {
-  padding: 4rem 2rem;
+  padding: 4rem 5%;
   justify-content: center;
 }
 
@@ -242,7 +251,15 @@ main {
   gap: 2rem;
   margin-bottom: 3rem;
   width: 100%;
+  justify-content: center;
+  justify-items: center;
 }
+
+.petsGrid .card {
+  flex: 1 1 250px;   /* min 250px, grow to fill remaining space */
+  max-width: 280px;  /* optional: caps the card width */
+}
+
 
 .viewAllContainer {
   text-align: center;
@@ -281,11 +298,13 @@ main {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
 .statLabel {
   font-size: 1.125rem;
   opacity: 0.9;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
 /* -------------------- Responsive Breakpoints -------------------- */
@@ -294,12 +313,26 @@ main {
 @media (min-width: 1200px) {
   .heroTitle { font-size: 4rem; }
   .heroDescription { font-size: 1.5rem; }
-  .petsGrid { grid-template-columns: repeat(3, 1fr); }
+  .petsGrid { 
+    grid-template-columns: repeat(4, 1fr); 
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    flex-wrap: nowrap;
+    margin: 0 auto; 
+    margin-bottom: 32px;
+    max-width: 1200px;         
+    width: 100%;
+    padding: 0 2rem;
+  }
   .missionSteps { gap: 2rem; }
   .container { width: 100vw; max-width: 2000px; }
   .heroSection { min-height: 90vh; padding: 4rem 5%; }
   .heroTitle{ max-width: 60%;}
   .heroButtons .btn { max-width: 180px; min-width: 120px; }
+  .featuredPetsSection {
+    padding: 4rem 0;
+  }
 }
 
 /* Desktop / Laptop (992px – 1199px) */
