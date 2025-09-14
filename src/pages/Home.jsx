@@ -2,7 +2,7 @@ import styles from "./Home.module.css";
 import Card from "../components/Card";
 import { useState, useEffect } from "react";
 import LoadingSpinner from "../components/LoadingSpinner";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 
 function Home() {
   const [pets, setPets] = useState([]);
@@ -137,8 +137,6 @@ function Home() {
         </section>
 
         <div>
-        {/* Footer */}
-        <Footer/>
         </div>
     </div>
   );

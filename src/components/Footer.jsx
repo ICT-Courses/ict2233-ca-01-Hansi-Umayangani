@@ -1,13 +1,13 @@
 import styles from "./Footer.module.css";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         {/* Brand/About */}
         <div className={styles.footerAbout}>
         <div className={styles.brand}>
-            <h2>Pawfect Home</h2>
+            <h2>PAWFECT HOME</h2>
             <img
             src="src/assets/PawfectHome-Logo.png"
             alt="Pawfect Home Logo"
