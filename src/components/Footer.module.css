@@ -38,3 +38,26 @@
   margin: 1rem 0 0.5rem 0;
   text-align: left;
 }
+
+.footerAbout .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.brandLogo {
+  height: 50px;
+  width: auto;
+  display: inline-block;
+  object-fit: contain;
+  transform: translateY(-5px);
+}
+
+.footerAbout .brand img {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  transform: translateY(-10px);
+}
