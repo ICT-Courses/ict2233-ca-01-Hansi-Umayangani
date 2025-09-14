@@ -56,7 +56,7 @@ main {
   position: relative;
   width: 100%;
   min-height: 80vh;
-  background: url("../assets/Hero_Section_Image_New.png") no-repeat bottom center;
+  background: url("../assets/Hero_Section_Image_New.png") no-repeat center center;
   background-size: cover;
   background-color: #f7cd9e;
   display: flex;
@@ -210,9 +210,19 @@ main {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* Shared container for centered sections */
+.sectionContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
 /* -------------------- Featured Pets -------------------- */
 .featuredPetsSection {
   padding: 4rem 2rem;
+  justify-content: center;
 }
 
 .sectionHeader {
@@ -287,7 +297,7 @@ main {
   .petsGrid { grid-template-columns: repeat(3, 1fr); }
   .missionSteps { gap: 2rem; }
   .container { width: 100vw; max-width: 2000px; }
-  .heroSection { min-height: 110vh; padding: 4rem 5%; }
+  .heroSection { min-height: 90vh; padding: 4rem 5%; }
   .heroTitle{ max-width: 60%;}
   .heroButtons .btn { max-width: 180px; min-width: 120px; }
 }
@@ -297,7 +307,7 @@ main {
   .heroTitle { font-size: 3.75rem; }
   .heroDescription { font-size: 1.4rem; }
   .petsGrid { grid-template-columns: repeat(3, 1fr); }
-  .heroSection { min-height: 100vh; }
+  .heroSection { min-height: 60vh; padding: 4rem 5%; }
   .heroTitle {margin-top: 20px; max-width: 50%;}
 }
 
@@ -307,7 +317,7 @@ main {
   .heroDescription { font-size: 1.25rem; }
   .petsGrid { grid-template-columns: repeat(2, 1fr); }
   .missionSteps { grid-template-columns: repeat(3, 1fr); }
-  .heroSection { min-height: 70vh; padding: 4rem 5%; }
+  .heroSection { min-height: 85vh; padding: 4rem 5%; }
   .heroButtons { flex-direction: row; gap: 1rem; }
 }
 
@@ -317,8 +327,12 @@ main {
   .heroDescription { font-size: 1.1rem; }
   .heroButtons { flex-direction: column; gap: 0.75rem; }
   .petsGrid { grid-template-columns: 1fr; }
-  .missionSteps { grid-template-columns: 1fr; }
-  .heroSection { padding: 3rem 1.5rem; }
+  .missionSteps { grid-template-columns: 1fr; justify-content: center;}
+  .heroSection { 
+    padding: 3rem 1.5rem; 
+    background: url("../assets/Hero_Section_Image_New_01.png") no-repeat center center;
+    background-size: cover; min-height: 90vh;
+  }
   .heroButtons .btn { width: auto; max-width: 180px; min-width: 120px;  }
 }
 
@@ -327,8 +341,12 @@ main {
   .heroTitle { font-size: 2rem; }
   .heroDescription { font-size: 1rem; }
   .heroButtons { flex-direction: column; gap: 0.5rem; }
-  .missionImage img { height: 300px; }
-  .container { width: 90%; padding: 0 1rem; }
-  .petsGrid, .missionSteps { grid-template-columns: 1fr; }
+  .stepIcon { height: 150px; width: 150px;}
+  .petsGrid, .missionSteps { grid-template-columns: 1fr; justify-content: center; text-align: center;}
   .heroButtons .btn {width: auto; max-width: 160px; min-width: 100px; }
+  .heroSection { 
+    padding: 3rem 1.5rem; 
+    background: url("../assets/Hero_Section_Image_New_02.png") no-repeat center center;
+    background-size: cover; min-height: 85vh;
+  }
 }

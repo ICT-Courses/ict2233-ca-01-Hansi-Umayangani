@@ -55,9 +55,11 @@
 
 
 /* -------------------- Responsive Breakpoints -------------------- */
-@media (max-width: 575px) {
 
+/* Extra Small Mobile (<=575px) */
+@media (max-width: 575px) {
   .menu-toggle { display: block; }
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -71,14 +73,16 @@
     gap: 10px;
     justify-content: center;
   }
+
   .nav-links.active { display: flex; }
-  .nav-links a { margin: 10px 0; font-size: 0.9rem; }
-  .logo { font-size: clamp(1rem, 4vw, 1.4rem); }
+  .nav-links a { margin: 10px 0; font-size: 0.9rem; text-align: center; }
+  .logo { width: 60px; height: 60px; }
 }
 
+/* Mobile (576px – 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
-
   .menu-toggle { display: block; }
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -92,25 +96,51 @@
     gap: 10px;
     justify-content: center;
   }
+
   .nav-links.active { display: flex; }
-  .nav-links a { margin: 10px 0; font-size: 0.95rem; }
+  .nav-links a { margin: 10px 0; font-size: 0.95rem; text-align: center; }
+  .logo { width: 65px; height: 65px; }
 }
 
+/* Tablet (768px – 991px) */
 @media (max-width: 991px) and (min-width: 768px) {
-
-  .nav-links { display: flex !important; flex-direction: row; gap: 1.8rem; }
   .menu-toggle { display: none; }
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.8rem;
+    position: static;
+    width: auto;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  .nav-links a { margin: 0; font-size: 1rem; }
 }
 
+/* Desktop / Laptop (992px – 1199px) */
 @media (max-width: 1199px) and (min-width: 992px) {
-
-  .nav-links { display: flex !important; flex-direction: row; gap: 1.8rem; }
   .menu-toggle { display: none; }
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    width: auto;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  .nav-links a { font-size: 1rem; }
 }
 
+/* Large Desktop (>=1200px) */
 @media (min-width: 1200px) {
-  body { font-size: 1rem; }
-
-  .nav-links { display: flex !important; flex-direction: row; gap: 2rem; }
   .menu-toggle { display: none; }
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .links a { font-size: 1rem; }
 }
