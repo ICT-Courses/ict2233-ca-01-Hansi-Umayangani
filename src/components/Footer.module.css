@@ -1,5 +1,5 @@
 .footer {
-  background: #4b2e1e;
+  background-color: #3f1b00;
   color: #fff;
   padding: 3rem 10% 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -8,8 +8,8 @@
 
 .footerContent {
   display: grid;
-  grid-template-columns: 2.5fr 3fr 2.5fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.5fr 0.5fr 0.5fr;
+  gap: 12rem;
   justify-items: start;
   align-items: start;
 }
@@ -29,6 +29,7 @@
 .footer h4 {
   font-size: clamp(0.9rem, 1.6vw, 1rem);
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* Paragraphs */
@@ -68,6 +69,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 2rem;
 }
 
 .footerLinks ul li {
@@ -89,7 +91,7 @@
 .contactInfo p,
 .contactInfo a {
   font-size: 0.9rem;
-  margin: 0.3rem 0;
+  margin: 0rem 0;
   display: flex;
   align-items: left;
   gap: 0.2rem;
@@ -97,6 +99,10 @@
   text-decoration: none;
   justify-content: left;
   text-align: left;
+}
+
+.contactInfo p {
+    margin-top: 1.5rem;
 }
 
 .contactIcon {

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import logo from "../assets/Pawfect-Home_Logo.png";
+import logo from "../assets/PawfectHome-Logo.png";
 
 function Navbar() {
   return (

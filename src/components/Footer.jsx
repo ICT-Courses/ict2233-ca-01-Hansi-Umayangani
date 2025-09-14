@@ -42,13 +42,13 @@ export function Footer() {
         </p>
         <p>
             <img
-            src="/icons/mail.png" alt="Email" className={styles.contactIcon}
+            src="src/assets/icons/mail.png" alt="Email" className={styles.contactIcon}
             />
             <a href="mailto:info@pawfecthome.com">info@pawfecthome.com</a>
         </p>
         <p>
             <img
-            src="/icons/location.png" alt="Location" className={styles.contactIcon}
+            src="src/assets/icons/location.png" alt="Location" className={styles.contactIcon}
             />
             <a
             href="https://maps.google.com/?q=123+Pet+Street,+Animal+City"

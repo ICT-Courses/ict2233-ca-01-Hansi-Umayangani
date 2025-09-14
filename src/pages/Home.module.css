@@ -1,7 +1,7 @@
 :root {
   --background: #fff8f3;
   --foreground: #3d2e1e;
-  --primary: #8b420b;
+  --primary: #532c0e;
   --primary-foreground: #fff;
   --secondary: #855207a9;
   --secondary-foreground: #fff;
@@ -263,12 +263,12 @@ main {
 
 .viewAllContainer {
   text-align: center;
+  color: rgba(180, 111, 6, 0.856);
 }
 
 .btnOutlineAccent {
-  background-color: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
+  background-color:rgba(180, 111, 6, 0.856);;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
   text-decoration: none;
@@ -276,8 +276,8 @@ main {
 }
 
 .btnOutlineAccent:hover {
-  background-color: var(--accent);
-  color: var(--accent-foreground);
+  background-color: rgba(121, 73, 1, 0.863);;
+  color: #fff;
 }
 
 /* -------------------- Stats Section -------------------- */
