@@ -53,14 +53,64 @@
   cursor: pointer;
 }
 
-@media (max-width: 640px) {
-  .navbar {
+
+/* -------------------- Responsive Breakpoints -------------------- */
+@media (max-width: 575px) {
+
+  .menu-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 2.5%;
+    background-color: var(--primary);
     flex-direction: column;
-    gap: 1rem;
+    width: 95%;
+    display: none;
+    padding: 15px 10px;
+    border-radius: 0 0 10px 10px;
+    gap: 10px;
+    justify-content: center;
   }
-  .links {
-    display: flex;
+  .nav-links.active { display: flex; }
+  .nav-links a { margin: 10px 0; font-size: 0.9rem; }
+  .logo { font-size: clamp(1rem, 4vw, 1.4rem); }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+  .menu-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--primary);
     flex-direction: column;
-    gap: 0.5rem;
+    width: 90%;
+    display: none;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    gap: 10px;
+    justify-content: center;
   }
+  .nav-links.active { display: flex; }
+  .nav-links a { margin: 10px 0; font-size: 0.95rem; }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+  .nav-links { display: flex !important; flex-direction: row; gap: 1.8rem; }
+  .menu-toggle { display: none; }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+  .nav-links { display: flex !important; flex-direction: row; gap: 1.8rem; }
+  .menu-toggle { display: none; }
+}
+
+@media (min-width: 1200px) {
+  body { font-size: 1rem; }
+
+  .nav-links { display: flex !important; flex-direction: row; gap: 2rem; }
+  .menu-toggle { display: none; }
 }
