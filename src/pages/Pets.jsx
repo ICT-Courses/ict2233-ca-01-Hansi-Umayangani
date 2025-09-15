@@ -39,6 +39,37 @@ const filteredPets =
         </div>
       </section>
 
+      {/* Pets Grid */}
+      <section className={styles.petsSection}>
+        <div className={styles.sectionContainer}>
+          <div className={styles.petsGrid}>
+            {filteredPets.map((pet) => (
+              <div key={pet.id} className={styles.petCard}>
+                {/* Image on Left */}
+                <div className={styles.imageWrapper}>
+                  <img src={pet.image} alt={pet.name} className={styles.petImage} />
+                  <span className={styles.petType}>{pet.type}</span>
+                </div>
+
+                {/* Info on Right */}
+                <div className={styles.petInfo}>
+                  <h3>{pet.name}</h3>
+                  <p><strong>Type:</strong> {pet.type}</p>
+                  <p><strong>Age:</strong> {pet.age}</p>
+                  <p><strong>Breed:</strong> {pet.breed}</p>
+                  {pet.description && (
+                    <p className={styles.description}>{pet.description}</p>
+                  )}
+                  {pet.details && (
+                    <p className={styles.details}>{pet.details}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
     </>
   );
