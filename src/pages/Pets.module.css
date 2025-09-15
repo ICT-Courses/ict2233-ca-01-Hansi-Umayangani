@@ -117,3 +117,54 @@
   font-size: 0.85rem;
   font-weight: 600;
 }
+
+/* -------------------- No Match Section -------------------- */
+.noMatchSection {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #ffdeaf83;
+}
+
+.noMatchSection h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 1rem;
+  color: #4b2e1e;
+}
+
+.noMatchSection p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contactBtn,
+.aboutBtn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contactBtn {
+  background-color: #d48612;
+}
+
+.aboutBtn {
+  background-color: #8ca033;
+}
+
+.contactBtn:hover,
+.aboutBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
