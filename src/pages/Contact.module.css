@@ -294,3 +294,124 @@ textarea {
   transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(109, 58, 11, 0.35);
 }
+
+/* ---------------- Wrapper for Adoption + FAQ ---------------- */
+.adoption-faq-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+@media (min-width: 900px) {
+  .adoption-faq-wrapper {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: stretch;
+  }
+}
+
+/* ---------------- Adoption Process ---------------- */
+.adoption-process {
+  background: #fff9f4;
+  padding: clamp(1.5rem, 6vw, 4rem);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(53, 32, 12, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.adoption-process h2 {
+  text-align: center;
+  color: #4b2e1e;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.adoption-process ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
+  justify-content: center;
+}
+
+.adoption-process li {
+  counter-increment: step-counter;
+  background: #fdf6ed;
+  padding: 2rem 1.2rem 0.5rem;
+  margin: 0.7rem 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+  text-align: left;
+  width: 14rem;
+}
+
+.adoption-process li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #a46a2c;
+  color: #fff;
+  font-weight: bold;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* ---------------- FAQ Section ---------------- */
+  .faq {
+  background: #fff9f4;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(53, 32, 12, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #4b2e1e;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  background: #fff7f0;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(53, 32, 12, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(53, 32, 12, 0.18);
+}
+
+.faq-item h3 {
+  color: #a46a2c;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
