@@ -6,7 +6,13 @@ const Contact = () => {
     <>
       <Navbar />
       <main>
-        {/* Page content will go here */}
+        <section className={styles["contact-header"]}>
+         <h1>Contact Us</h1>
+            <p>
+                Ready to adopt or have questions? We'd love to hear from you!
+            </p>
+        </section>
+
       </main>
       <Footer />
     </>
