@@ -20,7 +20,7 @@ body {
 
 .sectionContainer {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 2%;
 }
 
 /* -------------------- Header -------------------- */
@@ -39,6 +39,7 @@ body {
 .headerSection p {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: #333;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -46,7 +47,7 @@ body {
 .filterSection {
   padding: 2rem 0;
   text-align: center;
-  background-color: #fdf6ed00;
+  background-color: #fdf6ed;
   margin-top: 20px;
   margin-bottom: -25px;
 }
@@ -83,11 +84,9 @@ body {
 
 .petsGrid {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 0 2%; 
   box-sizing: border-box;
 }
 
@@ -98,13 +97,9 @@ body {
   border: 1px solid #ddd;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   align-items: flex-start;
   position: relative;
-
-  flex: 1 1 48%;
-  width: 800px;
-  box-sizing: border-box;
 }
 
 .imageWrapper {
@@ -140,8 +135,8 @@ body {
 
 .petType {
   position: absolute;
-  top: -15px;    
-  right: 30px;  
+  top: -15px;
+  right: 30px;
   background: #d48612;
   color: #fff;
   padding: 0.4rem 0.8rem;
@@ -164,6 +159,7 @@ body {
 }
 
 .noMatchSection p {
+  max-width: 700px;
   margin: 0 auto 2rem;
   font-size: 1rem;
   color: #333;
@@ -176,8 +172,7 @@ body {
   flex-wrap: wrap;
 }
 
-.contactBtn,
-.aboutBtn {
+.contactBtn, .aboutBtn {
   padding: 12px 25px;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -194,14 +189,12 @@ body {
   background-color: #8ca033;
 }
 
-.contactBtn:hover,
-.aboutBtn:hover {
+.contactBtn:hover, .aboutBtn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
 
 /* -------------------- Responsive Breakpoints -------------------- */
-
 /* Desktop / Large Screens (≥1200px) */
 @media (min-width: 1200px) {
   .petCard {
@@ -212,28 +205,19 @@ body {
 /* Laptop / Medium Screens (992px–1199px) */
 @media (max-width: 1199px) and (min-width: 992px) {
   .petCard {
-    flex: 1 1 45%; /* still two columns */
-  }
-  .imageWrapper {
-    flex: 0 0 200px;
+    flex-direction: row;
   }
 }
 
 /* Tablet (768px–991px) */
 @media (max-width: 991px) and (min-width: 768px) {
   .petCard {
-    flex-direction: row;
-    flex: 1 1 100%;
     gap: 1.5rem;
   }
 
   .petImage {
     width: 180px;
   }
-  .imageWrapper {
-    flex: 0 0 200px;
-  }
-
 }
 
 /* Mobile (≤767px) */
@@ -243,18 +227,17 @@ body {
     align-items: center;
     text-align: center;
   }
-  .imageWrapper {
-    flex: 0 0 auto;
-  }
+
   .petImage {
-    width: 220px;
-    height: 220px;
+    width: 220px; /* adjust as needed */
   }
+
   .petInfo {
     text-align: center;
   }
+
   .petType {
     top: -15px;
-    left: 15px;
+    right: 10px;
   }
 }
