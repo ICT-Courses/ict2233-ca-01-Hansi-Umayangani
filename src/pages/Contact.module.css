@@ -58,3 +58,132 @@ img {
   line-height: 1.6;
 }
 
+/* -------------------- Contact Details Section -------------------- */
+.contact-details {
+  background: #fff;
+  width: 95%;
+  margin: 2rem auto;
+  padding: clamp(20px, 5vw, 50px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(109, 58, 11, 0.3);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.contact-card {
+  background: #fdf6ed;
+  padding: clamp(20px, 4vw, 50px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(53, 32, 12, 0.3);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card .card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.contact-card .muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.contact-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #a46a2c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #7a4d1c;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.social-links .social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Special Larger Card (Location) */
+.large-card {
+  background: #fff7f0;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(20px, 5vw, 50px);
+  border-radius: 10px;
+}
+
+.large-card .card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+
+.large-card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0.8rem 0;
+}
+
+.large-card .inner-card {
+  text-align: center;
+}
+
+.map-embed {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
