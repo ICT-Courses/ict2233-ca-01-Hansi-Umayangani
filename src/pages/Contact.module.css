@@ -187,3 +187,110 @@ img {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+/* -------------------- Message / Contact Form -------------------- */
+.message-form-section {
+  margin: 4rem auto;
+  width: 95%;
+}
+
+.review-management {
+  background: #fff;
+  padding: clamp(20px, 5vw, 50px);
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(109, 58, 11, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 5vw, 40px);
+  align-items: center;
+}
+
+.message-form-section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  margin-bottom: 1rem;
+}
+
+.review-form-container {
+  background: #fdf6ed;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(109, 58, 11, 0.3);
+  padding: clamp(25px, 4vw, 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  padding: clamp(6px, 1vw, 10px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  color: #3e2723;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #99662c;
+  box-shadow: 0 0 5px rgba(153, 102, 44, 0.3);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+::placeholder {
+  color: #888;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: clamp(10px, 1.2vw, 14px);
+  background-color: #B36205;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  font-weight: 550;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(109, 58, 11, 0.3);
+}
+
+.submit-btn:hover {
+  background-color: #7e4723;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(109, 58, 11, 0.35);
+}
