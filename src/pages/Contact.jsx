@@ -88,6 +88,44 @@ const Contact = () => {
         </div>
         </section>
 
+        {/* ---------------- Contact / Message Form ---------------- */}
+        <section className={styles["message-form-section"]}>
+          <div className={styles["review-management"]}>
+            <h2>Get in Touch</h2>
+            <p>Fill out the form below and we will get back to you as soon as possible.</p>
+            <div className={styles["review-form-container"]}>
+              <h4>Send a Message</h4>
+              <form className={styles["review-form"]}>
+                <div className={styles["form-row"]}>
+                  <div className={styles["form-group"]}>
+                    <label htmlFor="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Full Name *" required />
+                  </div>
+                  <div className={styles["form-group"]}>
+                    <label htmlFor="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Email Address *" required />
+                  </div>
+                </div>
+                <div className={styles["form-row"]}>
+                  <div className={styles["form-group"]}>
+                    <label htmlFor="pet">Pet Interested In (Optional)</label>
+                    <input type="text" id="pet" placeholder="Pet Interested In" />
+                  </div>
+                  <div className={styles["form-group"]}>
+                    <label htmlFor="phone">Contact Number *</label>
+                    <input type="tel" id="phone" placeholder="Contact Number *" required />
+                  </div>
+                </div>
+                <div className={styles["form-group"] + " " + styles["full-width"]}>
+                  <label htmlFor="message">Your Message *</label>
+                  <textarea id="message" placeholder="Your Message *" rows="5" required></textarea>
+                </div>
+                <button type="submit" className={styles["submit-btn"]}>Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </>
