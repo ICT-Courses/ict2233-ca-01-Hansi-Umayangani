@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { usePets } from "../hooks/usePets";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
