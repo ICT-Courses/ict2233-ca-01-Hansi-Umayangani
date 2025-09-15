@@ -59,3 +59,27 @@ p {
   background-color: #3d241a;
   transform: translateY(-2px);
 }
+
+@media (max-width: 400px) {
+  .dogGif {
+    width: 60vw;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+}
