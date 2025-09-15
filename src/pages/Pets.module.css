@@ -1,0 +1,49 @@
+/* -------------------- Header -------------------- */
+.headerSection {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.headerSection h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #4b2e1e;
+}
+
+.headerSection p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* -------------------- Filter -------------------- */
+.filterSection {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #fdf6ed;
+}
+
+.filterBar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filterBar button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d48612;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filterBar button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
