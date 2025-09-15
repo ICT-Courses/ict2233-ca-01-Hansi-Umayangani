@@ -74,6 +74,25 @@ const filteredPets =
         </div>
       </section>
 
+      {/* Didn't Find Section */}
+      <section className={styles.noMatchSection}>
+        <div className={styles.sectionContainer}>
+          <h2>Didn't Find Your Perfect Match?</h2>
+          <p>
+            New pets arrive regularly at our shelter. Contact us to learn about upcoming
+            arrivals or to discuss what type of pet would be perfect for your family.
+          </p>
+          <div className={styles.buttons}>
+            <Link to="/contact" className={styles.contactBtn}>
+              Contact Us
+            </Link>
+            <Link to="/about" className={styles.aboutBtn}>
+              Learn More About Us
+            </Link>
+          </div>
+        </div>
+      </section>
+
 
     </>
   );
