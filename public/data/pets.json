@@ -4,7 +4,7 @@
     "name": "Bella",
     "breed": "Golden Retriever crossed",
     "age": "2 years",
-    "type": "dog",
+    "type": "Dog",
     "description": "Friendly and playful, loves children.",
     "details": "Bella is a very energetic and social dog who gets along well with other pets and children. She is in excellent health, fully vaccinated, and enjoys long walks, playtime, and learning new tricks. Bella thrives in active households.",
     "image": "/assets/Bella.jpg"
@@ -14,7 +14,7 @@
     "name": "Max",
     "breed": "Beagle crossed",
     "age": "3 years",
-    "type": "dog",
+    "type": "Dog",
     "description": "Curious and energetic, enjoys walks.",
     "details": "Max is a curious and intelligent dog who loves exploring and sniffing new surroundings. He has a friendly temperament and is healthy with no known medical issues. Max responds well to training and enjoys being part of family activities.",
     "image": "/assets/Max_Portrait.jpg"
@@ -24,7 +24,7 @@
     "name": "Luna",
     "breed": "Siamese Cat crossed",
     "age": "1 year",
-    "type": "cat",
+    "type": "Cat",
     "description": "Affectionate and calm, loves to cuddle.",
     "details": "Luna is a gentle and affectionate cat who enjoys quiet environments and cuddling. She is healthy, litter-trained, and gets along with other cats. Luna is very playful indoors and loves toys and interactive games.",
     "image": "/assets/Luna_Portrait.jpg"
@@ -34,7 +34,7 @@
     "name": "Charlie",
     "breed": "Labrador Retriever Crossed",
     "age": "4 years",
-    "type": "dog",
+    "type": "Dog",
     "description": "Loyal and friendly, great with families.",
     "details": "Charlie is a loyal and loving dog who adapts well to family life. He is healthy, well-socialized, and enjoys playing fetch, swimming, and spending time outdoors. Charlie is calm indoors and gets along with children and other pets.",
     "image": "/assets/Charlie_Portrait.jpg"

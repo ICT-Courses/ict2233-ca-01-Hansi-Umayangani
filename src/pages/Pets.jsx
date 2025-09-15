@@ -35,7 +35,6 @@ const filteredPets =
             <button onClick={() => setFilter("all")}>All</button>
             <button onClick={() => setFilter("dog")}>Dogs</button>
             <button onClick={() => setFilter("cat")}>Cats</button>
-            <button onClick={() => setFilter("guinea pig")}>Guinea Pigs</button>
           </div>
         </div>
       </section>
@@ -53,8 +52,9 @@ const filteredPets =
                 {/* Image on Left */}
                 <div className={styles.imageWrapper}>
                   <img src={pet.image} alt={pet.name} className={styles.petImage} />
-                  <span className={styles.petType}>{pet.type}</span>
                 </div>
+
+                <span className={styles.petType}>{pet.type}</span>
 
                 {/* Info on Right */}
                 <div className={styles.petInfo}>
