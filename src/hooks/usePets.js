@@ -29,6 +29,5 @@ export const usePets = () => {
     fetchPets();
     }, []);
 
-
   return { pets, loading, error };
 };
