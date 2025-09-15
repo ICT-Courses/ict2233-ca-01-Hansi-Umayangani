@@ -1,12 +1,25 @@
-# React + Vite
+# Pawfect Home – Pet Adoption Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pawfect Home is a web application designed to connect abandoned pets with caring families.  
+The platform provides an interface for browsing available pets, learning about the mission, and contacting the organization.  
+This project was developed as a small web application project using React and Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Homepage with Hero Section** – Welcoming introduction and adoption message.  
+- **Pet Listings** – Browse available pets with details such as name, type, breed, and age. Includes pet type filter buttons to quickly filter pets by category.  
+- **About Us Page** – Mission and vision of Pawfect Home.  
+- **Contact Page** – Form for inquiries and support.  
+- **Responsive Design** – Optimized for desktop and mobile devices.  
+- **Custom 404 Page** – Friendly error page with pet-themed styling.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **Frontend Framework:** React.js  
+- **Styling:** Bootstrap and CSS Modules  
+- **Routing:** React Router  
+- **Package Manager:** npm  
