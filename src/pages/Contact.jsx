@@ -126,6 +126,44 @@ const Contact = () => {
           </div>
         </section>
 
+        {/* ---------------- Adoption + FAQ Wrapper ---------------- */}
+        <div className={styles["adoption-faq-wrapper"]}>
+            
+            {/* Adoption Process */}
+            <section className={styles["adoption-process"]}>
+                <h2>Adoption Process</h2>
+                <ol>
+                <li>Submit inquiry form</li>
+                <li>Schedule meet & greet</li>
+                <li>Complete adoption application</li>
+                <li>Home visit (if required)</li>
+                <li>Finalize adoption</li>
+                </ol>
+            </section>
+
+            {/* FAQ Section */}
+            <section className={styles["faq"]}>
+                <h2>Frequently Asked Questions</h2>
+                <div className={styles["faq-item"]}>
+                <h3>What is the adoption fee?</h3>
+                <p>Adoption fees vary by pet and cover vaccinations, spaying/neutering, and medical care. Contact us for details.</p>
+                </div>
+                <div className={styles["faq-item"]}>
+                <h3>Can I meet a pet before adopting?</h3>
+                <p>Yes! We encourage meet and greets to ensure a good match.</p>
+                </div>
+                <div className={styles["faq-item"]}>
+                <h3>Do you offer training support?</h3>
+                <p>Yes, we provide guidance and can recommend local trainers.</p>
+                </div>
+                <div className={styles["faq-item"]}>
+                <h3>What if the adoption doesn't work out?</h3>
+                <p>We have a return policy to ensure the pet’s wellbeing.</p>
+                </div>
+            </section>
+            
+        </div>
+
       </main>
       <Footer />
     </>
