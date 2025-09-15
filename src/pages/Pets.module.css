@@ -105,3 +105,15 @@
   color: #333;
   line-height: 1.5;
 }
+
+.petType {
+  position: absolute;
+  top: -25px;    
+  right: -540px;  
+  background: #d48612;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
