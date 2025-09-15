@@ -1,10 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
     <>
-      <Navbar />
       <main>
         <section className={styles["contact-header"]}>
          <h1>Contact Us</h1>
@@ -17,7 +15,7 @@ const Contact = () => {
         <section className={styles["contact-details"]}>
         {/* Phone Card */}
         <div className={styles["contact-card"]}>
-            <img src="/icons/phone.svg" alt="Phone" className={styles["card-icon"]} />
+            <img src="src/assets/Icons/telephone (1).png" alt="Phone" className={styles["card-icon"]} />
             <h3>Phone</h3>
             <p>+94 7XXXXXXXX</p>
             <p className={styles.muted}>Mon-Sat: 9AM - 6PM</p>
@@ -26,7 +24,7 @@ const Contact = () => {
 
         {/* Email Card */}
         <div className={styles["contact-card"]}>
-            <img src="/icons/email.svg" alt="Email" className={styles["card-icon"]} />
+            <img src="src/assets/Icons/e-mail(1).png" alt="Email" className={styles["card-icon"]} />
             <h3>Email</h3>
             <p>info@pawfecthome.com</p>
             <p className={styles.muted}>Response within 24 hours</p>
@@ -35,7 +33,7 @@ const Contact = () => {
 
         {/* WhatsApp Card */}
         <div className={styles["contact-card"]}>
-            <img src="/icons/whatsapp.svg" alt="WhatsApp" className={styles["card-icon"]} />
+            <img src="src/assets/Icons/whatsapp (1).png" alt="WhatsApp" className={styles["card-icon"]} />
             <h3>WhatsApp</h3>
             <p>Chat with us directly for quick responses</p>
             <p className={styles.muted}>Mon-Sat: 9AM - 6PM</p>
@@ -50,21 +48,21 @@ const Contact = () => {
 
         {/* Social Media Card */}
         <div className={styles["contact-card"]}>
-            <img src="/icons/social.svg" alt="Social Media" className={styles["card-icon"]} />
+            <img src="src/assets/Icons/social.png" alt="Social Media" className={styles["card-icon"]} />
             <h3>Social Media</h3>
             <div className={styles["social-links"]}>
             <a href="https://instagram.com/pawfecthome" target="_blank" rel="noopener noreferrer">
-                <img src="/icons/instagram.svg" alt="Instagram" className={styles["social-icon"]} />
+                <img src="src/assets/Icons/instagram (1).png" alt="Instagram" className={styles["social-icon"]} />
             </a>
             <a href="https://facebook.com/pawfecthome" target="_blank" rel="noopener noreferrer">
-                <img src="/icons/facebook.svg" alt="Facebook" className={styles["social-icon"]} />
+                <img src="src/assets/Icons/facebook (1).png" alt="Facebook" className={styles["social-icon"]} />
             </a>
             </div>
         </div>
 
         {/* Large Location Card */}
         <div className={`${styles["contact-card"]} ${styles["large-card"]}`}>
-            <img src="/icons/location.svg" alt="Location" className={styles["card-icon"]} />
+            <img src="src/assets/Icons/location (1).png" alt="Location" className={styles["card-icon"]} />
             <h3>Visit Us</h3>
             <p>Come meet our pets and learn about adoption!</p>
             <hr />
@@ -90,12 +88,12 @@ const Contact = () => {
 
         {/* ---------------- Contact / Message Form ---------------- */}
         <section className={styles["message-form-section"]}>
-          <div className={styles["review-management"]}>
+          <div className={styles["get-in-touch"]}>
             <h2>Get in Touch</h2>
             <p>Fill out the form below and we will get back to you as soon as possible.</p>
-            <div className={styles["review-form-container"]}>
-              <h4>Send a Message</h4>
-              <form className={styles["review-form"]}>
+            <div className={styles["get-in-touch-form-container"]}>
+              <h3>Send a Message</h3>
+              <form className={styles["get-in-touch-form"]}>
                 <div className={styles["form-row"]}>
                   <div className={styles["form-group"]}>
                     <label htmlFor="name">Full Name *</label>
@@ -165,7 +163,6 @@ const Contact = () => {
         </div>
 
       </main>
-      <Footer />
     </>
   );
 };

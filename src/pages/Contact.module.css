@@ -30,32 +30,26 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* -------------------- Contact Header -------------------- */
 .contact-header {
   width: 100%;
   background: #FFF9F4;
-  padding: 4rem 10% 3rem;
+  padding: clamp(3rem, 30vw, 4rem) 0;
   text-align: center;
   color: #3d2e1e;
 }
 
 .contact-header h1 {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 
 .contact-header p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+  color: #333;
   line-height: 1.6;
+  margin-inline: auto;
+  max-width: 100%;
 }
 
 /* -------------------- Contact Details Section -------------------- */
@@ -100,8 +94,8 @@ img {
 }
 
 .contact-card .card-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 1rem;
 }
 
@@ -164,8 +158,8 @@ img {
 }
 
 .large-card .card-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 2rem;
   object-fit: contain;
 }
@@ -194,7 +188,7 @@ img {
   width: 95%;
 }
 
-.review-management {
+.get-in-touch {
   background: #fff;
   padding: clamp(20px, 5vw, 50px);
   border-radius: 8px;
@@ -210,10 +204,14 @@ img {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: clamp(1.4rem, 2vw, 1.8rem);
-  margin-bottom: 1rem;
+  margin-bottom: -2rem;
 }
 
-.review-form-container {
+.get-in-touch p {
+  margin-top: 20px;
+}
+
+.get-in-touch-form-container {
   background: #fdf6ed;
   width: 100%;
   border-radius: 8px;
@@ -224,7 +222,11 @@ img {
   align-items: center;
 }
 
-.review-form {
+.get-in-touch-form-container h3 {
+  margin-bottom: 25px;
+}
+
+.get-in-touch-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -257,6 +259,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
   transition: border 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
 }
 
 input:focus, select:focus, textarea:focus {

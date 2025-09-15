@@ -80,8 +80,9 @@ const filteredPets =
         <div className={styles.sectionContainer}>
           <h2>Didn't Find Your Perfect Match?</h2>
           <p>
-            New pets arrive regularly at our shelter. Contact us to learn about upcoming
-            arrivals or to discuss what type of pet would be perfect for your family.
+            New pets arrive regularly at our shelter. <br/>
+            Contact us to learn about upcoming arrivals or to discuss <br/>
+            what type of pet would be perfect for your family.
           </p>
           <div className={styles.buttons}>
             <Link to="/contact" className={styles.contactBtn}>

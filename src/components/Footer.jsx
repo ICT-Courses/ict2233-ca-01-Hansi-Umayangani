@@ -38,7 +38,7 @@ export default function Footer() {
             <img
             src="src/assets/Icons/phone.png" alt="Phone" className={styles.contactIcon}
             />
-            <a href="tel:+555123PETS">(555) 123-PETS</a>
+            <a href="tel:+0627389550">+0627389550</a>
         </p>
         <p>
             <img
@@ -55,7 +55,7 @@ export default function Footer() {
             target="_blank" rel="noopener noreferrer"
             >
             123 Pet Street,<br />
-            Animal City, AC 12345
+            Colombo, Sri Lanka
             </a>
         </p>
         </div>

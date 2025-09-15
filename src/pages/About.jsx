@@ -1,8 +1,5 @@
 import styles from "./About.module.css";
 
-import maxImg from "../assets/Rescue_Image.jpg";
-import lunaImg from "../assets/Rehome_Image.jpg";
-
 const About = () => {
     return (
         <>
