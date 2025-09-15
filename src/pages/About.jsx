@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
     return (
@@ -132,8 +133,12 @@ const About = () => {
                         there are many ways to get involved with Pawfect Home.
                     </p>
                     <div className={styles.buttons}>
-                        <button className={styles.adoptBtn}>Adopt a Pet</button>
+                        <Link to="/pets">
+                            <button className={styles.adoptBtn}>Adopt a Pet</button>
+                        </Link>
+                        <Link to="/contact">
                         <button className={styles.involveBtn}>Get Involved</button>
+                        </Link>
                     </div>
                 </div>
             </section>

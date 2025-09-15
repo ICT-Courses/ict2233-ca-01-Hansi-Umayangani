@@ -17,9 +17,9 @@ const Contact = () => {
         <div className={styles["contact-card"]}>
             <img src="src/assets/Icons/telephone (1).png" alt="Phone" className={styles["card-icon"]} />
             <h3>Phone</h3>
-            <p>+94 7XXXXXXXX</p>
+            <p>+0627389550</p>
             <p className={styles.muted}>Mon-Sat: 9AM - 6PM</p>
-            <a href="tel:+947XXXXXXX">Call Now →</a>
+            <a href="tel:+0627389550">Call Now →</a>
         </div>
 
         {/* Email Card */}

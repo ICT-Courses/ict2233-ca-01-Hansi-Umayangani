@@ -328,7 +328,7 @@ img {
 }
 
 .readySection p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
   color: #333;
   line-height: 1.6;
   margin-inline: auto;
@@ -344,9 +344,17 @@ img {
   flex-wrap: wrap;
 }
 
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .adoptBtn,
 .involveBtn {
-  padding: 12px 25px;
+  padding: 15px 28px;
   border: none;
   border-radius: 8px;
   cursor: pointer;

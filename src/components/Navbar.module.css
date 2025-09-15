@@ -19,7 +19,7 @@
   font-size: clamp(0.85rem, 1.8vw, 1.2rem);
 }
 
-.links a .active {
+.links a.active {
   color: var(--border);
   font-weight: bold;
   border-bottom: 2px solid var(--border);

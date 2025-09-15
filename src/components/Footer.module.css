@@ -28,7 +28,8 @@
 
 .footer h2 {
   color: #EBCCAD;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: clamp(1.5rem, 2vw, 1rem);
 }
 
 .footer h4 {

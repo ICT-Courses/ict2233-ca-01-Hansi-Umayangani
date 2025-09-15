@@ -89,7 +89,7 @@ const filteredPets =
               Contact Us
             </Link>
             <Link to="/about" className={styles.aboutBtn}>
-              Learn More About Us
+              Learn More
             </Link>
           </div>
         </div>

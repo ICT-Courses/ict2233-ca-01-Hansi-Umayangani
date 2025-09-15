@@ -45,11 +45,11 @@ a {
 }
 
 .contact-header p {
-  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
-  color: #333;
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
   line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
 }
 
 /* -------------------- Contact Details Section -------------------- */
@@ -102,6 +102,8 @@ a {
 .contact-card p {
   margin: 0.3rem 0;
   color: #333;
+  font-size: 1rem;
+  font-weight: 450;
 }
 
 .contact-card .muted {
