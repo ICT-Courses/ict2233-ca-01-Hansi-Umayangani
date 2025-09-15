@@ -42,6 +42,10 @@ const filteredPets =
       {/* Pets Grid */}
       <section className={styles.petsSection}>
         <div className={styles.sectionContainer}>
+
+            {loading && <p>Loading pets...</p>}
+            {error && <p className={styles.error}>{error}</p>}
+
           <div className={styles.petsGrid}>
             {filteredPets.map((pet) => (
               <div key={pet.id} className={styles.petCard}>
