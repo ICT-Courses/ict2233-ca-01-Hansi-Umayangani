@@ -142,51 +142,57 @@ body {
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 /* -------------------- No Match Section -------------------- */
 .noMatchSection {
-  padding: 4rem 0;
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  margin: 0 auto;
   text-align: center;
-  background-color: #ffdeaf83;
+  background-color: #df9e7833;
 }
 
 .noMatchSection h2 {
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 20px;
   color: #4b2e1e;
 }
 
 .noMatchSection p {
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   color: #333;
+  line-height: 1.6;
+  margin-inline: auto;
+  max-width: 100%;
 }
 
 .buttons {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .contactBtn, .aboutBtn {
   padding: 12px 25px;
+  border: none;
   border-radius: 8px;
-  font-size: 0.95rem;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
+  cursor: pointer;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .contactBtn {
   background-color: #d48612;
+  color: #fff;
 }
 
 .aboutBtn {
   background-color: #8ca033;
+  color: #fff;
 }
 
 .contactBtn:hover, .aboutBtn:hover {
