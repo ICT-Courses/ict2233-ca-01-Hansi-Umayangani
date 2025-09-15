@@ -51,15 +51,15 @@ img {
 
 /* -------------------- About Section -------------------- */
 .aboutSection {
-  padding: clamp(3rem, 30vw, 4rem) 0;
-  margin: 0 auto;
+  width: 100%;
+  background: #FFF9F4;
+  padding: clamp(4rem, 6vw, 2rem) 0;
   text-align: center;
-  background-color: #fff;
+  color: #3d2e1e;
 }
 
 .aboutSection h1 {
   font-size: clamp(1.8rem, 6vw, 2.5rem);
-  margin-bottom: 20px;
   color: #4b2e1e;
 }
 
@@ -67,7 +67,7 @@ img {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.8;
   max-width: 60ch;
-  margin: 0 auto 2rem ;
+  margin: 0 auto ;
   color: #2b2a2a;
   text-align: center;
 }
@@ -97,14 +97,30 @@ img {
 }
 
 .missionCards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1.5rem;
+  place-items: center;
   justify-content: center;
-  gap: 2rem;
   margin-top: 40px;
   width: 100%;
-  height: 420px;
   text-align: center;
+
+}
+
+/* Individual Mission Card */
+.missionCard {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cardImage {
@@ -136,7 +152,7 @@ img {
 /* -------------------- Vision Section -------------------- */
 
 .visionSection {
-  padding: clamp(3rem, 6vw, 6rem) 0;
+  padding: clamp(4rem, 8vw, 6rem) 0;
   margin: 0 auto;
   text-align: center;
   background-color: #fffaf0; 
@@ -144,8 +160,8 @@ img {
 
 .visionSection h2 {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
-  margin-bottom: 20px;
   color: #4b2e1e;
+  margin-top: -5;
 }
 
 .visionSection p {
@@ -170,14 +186,29 @@ img {
 
 
 .visionCards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1.5rem;
+  place-items: center;
   justify-content: center;
-  gap: 2rem;
   margin-top: 40px;
   width: 100%;
-  height: 12rem;
   text-align: center;
+}
+
+/* Individual Vision Card */
+.visionCard {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .visionCards .card {

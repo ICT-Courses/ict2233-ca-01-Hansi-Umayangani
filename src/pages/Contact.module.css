@@ -45,27 +45,31 @@ a {
 }
 
 .contact-header p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 /* -------------------- Contact Details Section -------------------- */
 .contact-details {
   background: #fff;
-  width: 95%;
-  margin: 2rem auto;
+  width: 100% !important;
+  margin: 0 auto;
   padding: clamp(20px, 5vw, 50px);
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(109, 58, 11, 0.3);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
   gap: 1.5rem;
   justify-items: center;
   align-items: stretch;
 }
+
 
 .contact-card {
   background: #fdf6ed;
@@ -210,7 +214,12 @@ a {
 }
 
 .get-in-touch p {
-  margin-top: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 .get-in-touch-form-container {
@@ -225,7 +234,8 @@ a {
 }
 
 .get-in-touch-form-container h3 {
-  margin-bottom: 25px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 2rem;
 }
 
 .get-in-touch-form {

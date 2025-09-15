@@ -35,14 +35,14 @@ function Home() {
             <div className={styles.container}>
             <div className={styles.logoContainer}>
             </div>
-            <h1 className={styles.heroTitle}>Welcome to Pawfect Home, <br/>
+            <h1 className={styles.heroTitle}>Welcome to Pawfect Home,
             where love finds its way.</h1>
             <p className={styles.heroDescription}>
                 Join us at Pawfect Home and make friendship, joy, and unconditional love
                 a part of your family today.
             </p>
             <div className={styles.heroButtons}>
-                <a href="/pets" className={`${styles.btn} ${styles.btnPrimary}`}>View Available Pets</a>
+                <a href="/pets" className={`${styles.btn} ${styles.btnPrimary}`}>View Companions</a>
                 <a href="/about" className={`${styles.btn} ${styles.btnOutline}`}>For More Details</a>
             </div>
             </div>

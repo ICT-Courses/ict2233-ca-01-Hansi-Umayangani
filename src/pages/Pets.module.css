@@ -124,6 +124,16 @@ body {
   gap: 0.5rem;
 }
 
+.petInfo h3 {
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  line-height: 1.6;
+  max-width: 60ch;
+  margin: 2 auto 0;
+  margin-bottom: 0rem;
+  color: #2b2a2a;
+  text-align: left;
+}
+
 .petInfo p{
   font-size: clamp(0.9rem, 1vw, 1.2rem);
   line-height: 1.6;
