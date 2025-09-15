@@ -8,9 +8,13 @@ const Pets = () => {
   const { pets, loading, error } = usePets();
   const [filter, setFilter] = useState("all");
 
+const filteredPets =
+  filter === "all" ? pets : pets.filter((pet) => pet.type.toLowerCase() === filter);
+
+
   return (
     <>
-    
+
       {/* Page Title Section */}
       <section className={styles.headerSection}>
         <div className={styles.sectionContainer}>
@@ -21,6 +25,20 @@ const Pets = () => {
           </p>
         </div>
       </section>
+
+      {/* Filter Section */}
+      <section className={styles.filterSection}>
+        <div className={styles.sectionContainer}>
+          <h2>Find Your Pet</h2>
+          <div className={styles.filterBar}>
+            <button onClick={() => setFilter("all")}>All</button>
+            <button onClick={() => setFilter("dog")}>Dogs</button>
+            <button onClick={() => setFilter("cat")}>Cats</button>
+            <button onClick={() => setFilter("guinea pig")}>Guinea Pigs</button>
+          </div>
+        </div>
+      </section>
+
 
     </>
   );
