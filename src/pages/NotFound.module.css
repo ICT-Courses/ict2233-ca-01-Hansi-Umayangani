@@ -8,3 +8,17 @@
   background-color: #ffffff;
   padding: 2rem 1rem;
 }
+
+.dogGif {
+  width: 40vw;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
