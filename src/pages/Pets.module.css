@@ -104,6 +104,7 @@ body {
   min-width: 95%;
 }
 
+
 .imageWrapper {
   flex: 1;
   position: relative;
@@ -121,6 +122,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.petInfo p{
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 60ch;
+  margin: 2 auto 0;
+  margin-bottom: 0rem;
+  color: #2b2a2a;
+  text-align: left;
 }
 
 .description {

@@ -35,9 +35,11 @@ function Home() {
             <div className={styles.container}>
             <div className={styles.logoContainer}>
             </div>
-            <h1 className={styles.heroTitle}>Find Your Pawfect Companion Today!</h1>
+            <h1 className={styles.heroTitle}>Welcome to Pawfect Home, <br/>
+            where love finds its way.</h1>
             <p className={styles.heroDescription}>
-                We rescue and rehome abandoned pets to loving families.
+                Join us at Pawfect Home and make friendship, joy, and unconditional love
+                a part of your family today.
             </p>
             <div className={styles.heroButtons}>
                 <a href="/pets" className={`${styles.btn} ${styles.btnPrimary}`}>View Available Pets</a>
@@ -53,11 +55,12 @@ function Home() {
                 <div>
                 <h2 className={styles.sectionTitle}>Our Mission</h2>
                 <p className={styles.missionText}>
-                    Our mission is to create a world where every pet feels safe, valued, and loved.<br/>
-                    Through dedicated rescue efforts, compassionate rehabilitation, and thoughtful rehoming, <br/>
-                    we give abandoned animals a second chance at life and <br/>
+                    Our mission is to create a world where every pet feels safe, valued, and loved.
+                    Through dedicated rescue efforts, compassionate rehabilitation, and thoughtful rehoming,
+                    we give abandoned animals a second chance at life and
                     connect them with families who will cherish them forever.
                 </p>
+
                 <div className={styles.missionSteps}>
 
                   <div className={styles.step}>

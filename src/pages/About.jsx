@@ -10,7 +10,7 @@ const About = () => {
                 <div className={styles.sectionContainer}>
                     <h1>About Pawfect Home</h1>
                     <p>
-                        We are dedicated to rescuing abandoned pets and connecting them with loving families.<br/> 
+                        We are dedicated to rescuing abandoned pets and connecting them with loving families. 
                         Our mission is to create a world where every pet finds a loving home.
                     </p>
                 </div>
@@ -20,7 +20,7 @@ const About = () => {
             <section className={styles.missionSection}>
                 <div className={styles.sectionContainer}>
                     <h2>Our Mission</h2>
-                    <p>At Pawfect Home, we rescue and rehabilitate abandoned, neglected, and surrendered pets. <br/>
+                    <p>At Pawfect Home, we rescue and rehabilitate abandoned, neglected, and surrendered pets.
                         We provide them with medical care, love, and training to prepare them for their forever homes.
                     </p>
                     <p>Every animal in the world deserves a second chance at happiness.</p>

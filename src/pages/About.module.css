@@ -64,11 +64,12 @@ img {
 }
 
 .aboutSection p {
-  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 /* -------------------- Mission -------------------- */
@@ -87,12 +88,12 @@ img {
 }
 
 .missionSection p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
-  margin-top: 20px;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 .missionCards {
@@ -148,11 +149,12 @@ img {
 }
 
 .visionSection p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 .visionIcon {
@@ -203,11 +205,12 @@ img {
 }
 
 .successSection p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 .storyCards {
@@ -286,12 +289,12 @@ img {
 }
 
 .impactSection p {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
-  margin-top: 8px;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 .impactCards {
@@ -328,11 +331,12 @@ img {
 }
 
 .readySection p {
-  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
-  color: #333;
-  line-height: 1.6;
-  margin-inline: auto;
-  max-width: 100%;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 60ch;
+  margin: 0 auto 2rem ;
+  color: #2b2a2a;
+  text-align: center;
 }
 
 /* -------------------- Buttons -------------------- */
